@@ -40,8 +40,7 @@ before_install:
   - export PATH=$PATH:$PWD/here/bin
 
 install:
-  - luarocks make rockspecs/lluv-websocket-scm-0.rockspec --deps-mode=none
-  - luarocks make rockspecs/lua-websockets-lluv-scm-0.rockspec --deps-mode=none
+  - luarocks make rockspecs/lua-websockets-permessage-deflate-scm-0.rockspec
 
 before_script:
   - pip install --user autobahntestsuite
